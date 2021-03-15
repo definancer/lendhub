@@ -1,10 +1,10 @@
 pragma solidity ^0.5.16;
 pragma experimental ABIEncoderV2;
 
-import "../LErc20.sol";
-import "../CToken.sol";
-import "../PriceOracle.sol";
-import "../EIP20Interface.sol";
+import "../ctoken/LErc20.sol";
+import "../ctoken/CToken.sol";
+import "../oracle/PriceOracle.sol";
+import "../interface/EIP20Interface.sol";
 import "../Governance/LendHub.sol";
 
 interface ComptrollerLensInterface {

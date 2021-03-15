@@ -1,6 +1,6 @@
 pragma solidity ^0.5.16;
 
-import "./ErrorReporter.sol";
+import "../lib/ErrorReporter.sol";
 import "./ComptrollerStorage.sol";
 /**
  * @title ComptrollerCore

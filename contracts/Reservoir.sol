@@ -97,4 +97,5 @@ contract Reservoir {
   }
 }
 
-import "./EIP20Interface.sol";
+// import "./EIP20Interface.sol";
+import "./interface/EIP20Interface.sol";

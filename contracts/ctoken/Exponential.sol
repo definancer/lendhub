@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
-import "./CarefulMath.sol";
-import "./ExponentialNoError.sol";
+import "../lib/CarefulMath.sol";
+import "../lib/ExponentialNoError.sol";
 
 /**
  * @title Exponential module for storing fixed-precision decimals

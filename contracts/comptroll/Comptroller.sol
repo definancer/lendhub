@@ -1,12 +1,12 @@
 pragma solidity ^0.5.16;
 
-import "./CToken.sol";
-import "./ErrorReporter.sol";
-import "./PriceOracle.sol";
-import "./ComptrollerInterface.sol";
+import "../ctoken/CToken.sol";
+import "../lib/ErrorReporter.sol";
+import "../oracle/PriceOracle.sol";
+import "../interface/ComptrollerInterface.sol";
 import "./ComptrollerStorage.sol";
 import "./Unitroller.sol";
-import "./Governance/LendHub.sol";
+import "../Governance/LendHub.sol";
 
 /**
  * @title Compound's Comptroller Contract

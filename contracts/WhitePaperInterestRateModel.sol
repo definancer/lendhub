@@ -1,7 +1,7 @@
 pragma solidity ^0.5.16;
 
-import "./InterestRateModel.sol";
-import "./SafeMath.sol";
+import "./interface/InterestRateModel.sol";
+import "./lib/SafeMath.sol";
 
 /**
   * @title LendHub's WhitePaperInterestRateModel Contract
