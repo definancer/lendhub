@@ -17,8 +17,7 @@ const oneEth = new BigNumber(Math.pow(10, 18));
 // }
 module.exports = {
   node: {
-    url: 'http://39.102.101.142:8555',
-    network_id: '8555',
+
     from: '',
   }, // ganache
   aaveV2: {

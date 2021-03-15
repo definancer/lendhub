@@ -1,0 +1,24 @@
+{
+  "name": "yarn",
+  "version": "1.0.0",
+  "description": "LendHub is a debit and credit protocol based on a modification of Compound that provides debit and credit mining capabilities for LHB.",
+  "main": "networks.js",
+  "dependencies": {},
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "scripts": {
+    "deploy:main": "truffle deploy --network main --migrations_directory main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/definancer/lendhub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/definancer/lendhub/issues"
+  },
+  "homepage": "https://github.com/definancer/lendhub#readme"
+}

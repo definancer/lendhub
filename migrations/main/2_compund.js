@@ -9,7 +9,7 @@ const Comptroller = artifacts.require("Comptroller");
 const JumpRateModel = artifacts.require("JumpRateModel");
 
 const SimplePriceOracle = artifacts.require("SimplePriceOracle");
-const Comp = artifacts.require("Comp");
+const LendHub = artifacts.require("LendHub");
 
 
 
@@ -23,9 +23,9 @@ module.exports = async (deployer, network, accounts) => {
     //   await simplePriceOracle.setDirectPrice(this.MockDAI.address, ethDecimalsBN.div(new BN(10)))
 
     // 2 Create comptroller
-    await deployer.deploy(Comp, sender);
-    let comp = await Comp.deployed();
-    await deployer.deploy(Comptroller, comp.address);
+    await deployer.deploy(LendHub, sender);
+    let lendHub = await LendHub.deployed();
+    await deployer.deploy(Comptroller, lendHub.address);
     let comptroller = await Comptroller.deployed();
 
     // 3 Set PriceOracle

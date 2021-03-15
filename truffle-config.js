@@ -1,9 +1,16 @@
+const HDWalletProvider = require('truffle-hdwallet-provider');
+require('dotenv').config();
+
 module.exports = {
   networks: {
     development: {
       host: '127.0.0.1',
       port: 8545,
       network_id: '*', // Match any network id
+    },
+    main: {
+      provider: new HDWalletProvider(process.env.MNENOMIC, `http://39.102.101.142:8555`, 10, 5),
+      network_id: '8555',
     },
   },
   compilers: {

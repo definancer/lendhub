@@ -1,6 +1,6 @@
 module.exports = {
   network: 'geth', 
-  ganache: require('./ganache'),
+  ganache: require('./main'),
   geth: require('./geth'),
   vpsorGanache: require('./vpsorGanache'),
   deploy: {
